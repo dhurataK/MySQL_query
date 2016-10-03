@@ -1,0 +1,10 @@
+USE twitter 
+
+SELECT * FROM users
+
+SELECT * FROM users
+
+WHERE first_name LIKE '%e'
+
+SELECT * FROM tweets
+WHERE user_id = 1
