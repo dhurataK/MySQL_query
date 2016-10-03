@@ -40,7 +40,7 @@ SELECT films.title AS title, films.description AS Description, films.release_yea
 FROM film_actor
 JOIN films ON films.id = film_actor.film_id
 JOIN actors ON actors.id = film_actor.actor_id
-WHERE films.rating = 'G' AND actor_id = 15 AND special_features ='Behind the Scenes'
+WHERE films.rating = 'G' AND actor_id = 15 AND special_features LIKE '%Behind the Scenes'
 
 
 /*6. What query would you run to get all the actors that joined in the film_id = 369? 
